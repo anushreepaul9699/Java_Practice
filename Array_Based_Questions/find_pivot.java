@@ -1,3 +1,4 @@
+package Array_Based_Questions;
 public class find_pivot
 {
     //defining the function

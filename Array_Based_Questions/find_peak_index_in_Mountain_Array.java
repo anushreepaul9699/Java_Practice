@@ -1,3 +1,4 @@
+package Array_Based_Questions;
 public class find_peak_index_in_Mountain_Array 
 {
     //defining the function to find the peak element
