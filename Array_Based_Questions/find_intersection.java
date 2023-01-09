@@ -16,7 +16,6 @@ public class find_intersection
         int pointer_2 = 0 ;
 
         //main part --- to find the intersection
-        System.out.println("The intersection of the two array is : ") ;
         while (pointer_1 < a && pointer_2 < b)
         {
             if(arr1[pointer_1] == arr2[pointer_2])
@@ -38,7 +37,13 @@ public class find_intersection
              }
 
           
-        }//end of while loop    
+        }//end of while loop
+        
+        //if no such element exists
+        if(pointer_1 >= a || pointer_2 >= b)
+        {
+            System.out.println("No common element exists !") ;
+        }
 
     }//end of function
     public static void main(String[] args) 
@@ -47,7 +52,7 @@ public class find_intersection
         int[] arr1 = {1,5,7,9} ;
         int a = arr1.length ;
 
-        int[] arr2 = {2,3,4,6 , 9} ;
+        int[] arr2 = {2,3,4,6} ;
         int b = arr2.length ;
 
         //calling the function
