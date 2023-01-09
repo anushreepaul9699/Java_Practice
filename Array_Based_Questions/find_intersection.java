@@ -36,16 +36,18 @@ public class find_intersection
              {
                 pointer_2++ ;
              }
-        }
+
+          
+        }//end of while loop    
 
     }//end of function
     public static void main(String[] args) 
     {
         //declaring two sorted arrays ---- (arr1 and arr2)
-        int[] arr1 = {131 , 671 , 801 , 1212, 4567,8906} ;
+        int[] arr1 = {1,5,7,9} ;
         int a = arr1.length ;
 
-        int[] arr2 = {223,801,999,1212,8906,10112} ;
+        int[] arr2 = {2,3,4,6 , 9} ;
         int b = arr2.length ;
 
         //calling the function
