@@ -36,7 +36,7 @@ public class find_pivot
         }
 
         //returning ans
-        return arr[s] ;
+        return s ;
     
     }//end of function
     public static void main(String[] args) 
@@ -49,7 +49,7 @@ public class find_pivot
         int ans = find_pivot_element(arr,n) ;
 
         //printing the pivot element
-        System.out.println("The pivot element is : "+ans) ;
+        System.out.println("The pivot element is  at index : "+ans) ;
 
     }//End of main class
 
