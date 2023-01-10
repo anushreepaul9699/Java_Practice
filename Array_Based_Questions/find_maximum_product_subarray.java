@@ -4,7 +4,7 @@ public class find_maximum_product_subarray
 {
     static long maxProduct(int[] arr, int n)
     {
-        // code here
+        // code here -- Kadane's algorithm
         
         long max_product = arr[0] ;
         long current_product = 1 ;
