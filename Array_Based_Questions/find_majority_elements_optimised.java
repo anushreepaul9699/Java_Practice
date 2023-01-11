@@ -5,9 +5,11 @@ public class find_majority_elements_optimised
     //function to find the majority element that appears more than n/2 times --- >
     static int find_majority (int[] arr , int n)
     {
-        int count = 0 ;
-        int element = 0 ;
+        int count = 0 ; // to count the occurrence of the element
 
+        int element = 0 ; // to store the element which have maximum count
+
+        //for loop -- to traverse the array
         for(int i = 0 ; i < n ; i++)
         {
             if(count == 0)
