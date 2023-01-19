@@ -45,11 +45,15 @@ public class Reverse_Stack
 
         reverse(s);
 
+        System.out.println();
+        System.out.println(s.size()) ;
+
         while(!s.isEmpty())
         {
             System.out.print(s.peek()+" ");
             s.pop() ;
         }
+ 
         
     }//end of main class
     
