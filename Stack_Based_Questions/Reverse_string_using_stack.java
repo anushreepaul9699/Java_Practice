@@ -33,10 +33,7 @@ public class Reverse_string_using_stack
         }
 
         System.out.println("The reverse string is : "+ans);
-
-
-
-        
+     
     }
     
 }
