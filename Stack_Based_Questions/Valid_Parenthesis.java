@@ -2,12 +2,8 @@ package Stack_Based_Questions;
 import java.util.* ;
 public class Valid_Parenthesis 
 {
-
-    public static void main(String[] args) 
+    public static boolean valid_or_not (Stack <Character> stack , String str)
     {
-        String str = "{([])}" ;
-        Stack<Character> stack = new Stack<>() ;
-        
         for(int i = 0 ; i < str.length() ; i++)
         {
             char ch = str.charAt(i) ;
@@ -39,7 +35,7 @@ public class Valid_Parenthesis
                     else
                       {
                         //false return korbi
-                         System.out.println("False") ;
+                         return false ;
                       }
                 
                 }
@@ -47,22 +43,34 @@ public class Valid_Parenthesis
                 //jodi empty hoye r akta bracket string e traverse korte giye recieve hoye tahole false hbe (  respect e kono ) nei
                 else
                 {
-                    System.out.println("False") ;
+                    return false ;
                 }
                
                
             }
 
-            if(stack.isEmpty()) // last e jodi empty hoye jaye tahole true else false
-            {
-                System.out.println("True") ;
-            }
 
-            else
-               System.out.println("False") ;
 
            
         }//end of for loop
+
+        if(stack.isEmpty()) // last e jodi empty hoye jaye tahole true else false
+            
+        return true ;
+    
+
+    else
+         return false ;
+    }
+
+    public static void main(String[] args) 
+    {
+        String str = "{([])}" ;
+        Stack<Character> stack = new Stack<>() ;
+        
+        boolean ans = valid_or_not(stack , str) ;
+
+        System.out.println(ans) ;
     
     } // end of main class
     
