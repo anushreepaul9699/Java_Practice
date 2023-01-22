@@ -33,14 +33,15 @@ public class Redundant_or_not
                         {
                             isRedundant = false ;
                         }
-
+                        
+                        //operator ko delete kro
                         stack.pop() ;
                     }
 
                     if(isRedundant == true)
                     
                         return true ;
-                    
+                    //open bracket ko v delete kro
                     stack.pop() ;
 
                   }
@@ -48,10 +49,11 @@ public class Redundant_or_not
                }
 
                
-         }
+         }//end of for loop
 
          return false ;
-    }
+    
+    }//end of function
     public static void main(String[] args) 
     {
         Stack <Character> stack = new Stack <> () ;
