@@ -57,6 +57,6 @@ public class next_smaller_element
 
         find_next_smaller(arr , n) ;
         
-    }
+    }//end of main class
     
-}
+}//end of the program
