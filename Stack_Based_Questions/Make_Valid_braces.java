@@ -11,7 +11,8 @@ public class Make_Valid_braces
         }
 
         Stack <Character> stack = new Stack <> () ;
-
+        
+        //valid part ami remove korchi akhane --- >
         for(int i = 0 ; i < str.length() ; i++)
         {
             char ch = str.charAt(i) ;
@@ -36,7 +37,7 @@ public class Make_Valid_braces
             
         }
 
-        //count_variables 'a' & 'b' 
+        //count_variables 'a' & 'b' --- > no._of open braces r close_braces count korar jonneh after removing valid part
         int a = 0 , b = 0 ;
 
         while (!stack.isEmpty())
