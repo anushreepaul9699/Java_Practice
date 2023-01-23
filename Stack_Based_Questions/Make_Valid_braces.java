@@ -16,21 +16,27 @@ public class Make_Valid_braces
         for(int i = 0 ; i < str.length() ; i++)
         {
             char ch = str.charAt(i) ;
-
+            
+            //jodi open bracket hoye : --- >
             if(ch == '{')
             {
+                //stack e push hbe -- >
                 stack.push(ch) ;
             }
 
             else 
             {
+                //jodi stack empty na hoye r close bracket recieve hoye tahole dekhbi top e open braket ache ki na 
+                // { = recieve && }=top element : {} valid part ---> then remove top  
                 if(!stack.isEmpty() && stack.peek() == '{')
                 {
+                    //remove top element
                     stack.pop() ;
                 }
 
                 else
                   {
+                    //jodi suru tei } bracket recieve hoye tahole push hbe
                      stack.push(ch) ;
                   }
             }
