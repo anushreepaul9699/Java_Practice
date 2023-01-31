@@ -100,6 +100,7 @@ public class double_ended_queue
         else
         {
             int element = arr[front] ;
+           
             if(front == rear)
             {
                 front = rear = -1 ;
