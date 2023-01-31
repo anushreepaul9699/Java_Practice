@@ -105,6 +105,11 @@ public class double_ended_queue
                 front = rear = -1 ;
             }
 
+            else if (front == size -1 )
+            {
+                front = 0 ;
+            }
+
             else
             {
                 front++ ;
