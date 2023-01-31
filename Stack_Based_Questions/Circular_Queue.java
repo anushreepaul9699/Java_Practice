@@ -1,7 +1,4 @@
 package Stack_Based_Questions;
-import java.util.*;
-
-import javax.lang.model.element.Element;
 public class Circular_Queue 
 {
     int size ;
